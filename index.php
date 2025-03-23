@@ -115,10 +115,6 @@ if (!$maintenance) {
 					else if (isset($_REQUEST['info'])) include_once("info.inc.php"); // ------------------------------ OK
 					else if (isset($_REQUEST['cart']) && $login) include_once("cart.inc.php"); // -------------------- OK
 					
-					// testing purpose, remove afterwards to be safe
-					// else if (isset($_REQUEST['test_cart']) && $login) include_once("test_cart.inc.php"); // -------------------- OK
-					
-					// else if (isset($_REQUEST['login'])) include_once("login.inc.php"); // ----------------------------
 					else if (isset($_REQUEST['show'])) include_once("show.inc.php"); // ------------------------------ OK
 					else if (isset($_REQUEST['search'])) include_once("search.inc.php"); // -------------------------- OK
 					else if (isset($_REQUEST['register']) && $login) include_once("register.inc.php"); // ------------ ??
@@ -128,21 +124,6 @@ if (!$maintenance) {
 					else if (isset($_REQUEST['orderinfo']) && $login) include_once("orderinfo.inc.php"); // ---------- OK
 					else if (isset($_REQUEST['thx_pp']) && $login) include_once("thx_pp.inc.php"); // ---------------- OK
 					else if (isset($_REQUEST['paypal']) && $login) include_once("paypal.inc.php"); // ---------------- OK
-					// else if (isset($_REQUEST['wish']) && $login) include_once("wish.inc.php");
-					// else if (isset($_REQUEST['delwish']) && $login) include_once("delwish.inc.php");
-					// else if (isset($_REQUEST['thx_register']) && $login) include_once("thx_register.inc.php"); // ----
-					// promo?
-					// else if (isset($_REQUEST['divine_vs_demonic'])) include_once("promo_dvd.inc.php");
-					// else if (isset($_REQUEST['alara_reborn'])) include_once("promo_arb.inc.php");
-
-					// else if (isset($_REQUEST['coming_soon'])) include_once("info_coming_soon.inc.php");
-					// else if (isset($_REQUEST['new_products'])) include_once("info_new_products.inc.php");
-					// else if (isset($_REQUEST['buylist'])) include_once("buylist.inc.php");
-
-
-
-					// else if (isset($_REQUEST['show_test'])) include_once("show_test.inc.php"); // ------------------------------ OK
-
 
 					// anything else = home
 					else include_once("home.inc.php"); // ------------------------------------------------------------- OK
